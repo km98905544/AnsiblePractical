@@ -1,7 +1,6 @@
 --- 
-- hosts: 10.0.5.194
+- hosts: 10.0.5.217
   become: yes
   tasks:
    - name: I want to execute the Linux command.
      command: hostname -f
-     
