@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+  -  name: install webserver on Red Hat node.
+     yum:
+      name: httpd
+      state: present
+
+  -  name: Start webserver on Red Hat node.
+     service:
+        name: httpd
+        state: started
+        

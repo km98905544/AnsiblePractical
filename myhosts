@@ -1,0 +1,10 @@
+10.0.5.217
+10.0.0.194
+
+[mywebservers]
+10.0.5.217
+10.0.0.194
+
+[mywebservers:vars]
+webubuntu= apache2
+webredhat= httpd

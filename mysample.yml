@@ -1,0 +1,24 @@
+---
+- hosts: mywebservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: I want to install apache2 web server on ubuntu node.
+    apt:
+      name: "{{webubuntu}}"
+      state: present
+    when: ansible_os_family =="Debian"
+  - name: I want to start apache2 web server on ubuntu node.
+    service:
+      name: "{{webubuntu}}"
+      state: started
+    when: ansible_os_family =="Debian"
+  - name: I want to install apache2 web server RedHat node.
+    yum:
+      name: "{{webredhat}}"
+      state: present
+    when: ansible_os_family =="RedHat"
+  - name: I want to start apache2 web server RedHat node.
+    service:
+      name: "{{webredhat}}"
+      
