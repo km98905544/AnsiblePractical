@@ -2,5 +2,10 @@
 - hosts: 10.0.5.217
   become: yes
   tasks:
+ 
    - name: I want to execute the Linux command.
      command: hostname -f
+     register: myvar
+
+   - name: We want to display the result.
+     debug: "{{myvar}}"
