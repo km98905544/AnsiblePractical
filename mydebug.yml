@@ -5,7 +5,8 @@
  
    - name: I want to execute the Linux command.
      command: hostname -f
-     register: myvar
+     register: myvariable1
 
    - name: We want to display the result.
-     debug: "{{myvar}}"
+     debug:
+      msg: "{{myvariable1}}"
