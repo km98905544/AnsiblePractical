@@ -1,5 +1,5 @@
 --- 
-- host: 10.0.0.194
+- hosts: 10.0.0.194
   become: yes
   tasks:
 
@@ -7,6 +7,8 @@
     apt:
      name: git
      state: present
+    
+    # This is the new commit we have added
     
   - name: Install tree 
     apt:
