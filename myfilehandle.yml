@@ -1,0 +1,9 @@
+--- 
+- hosts: 10.0.0.194
+  become: yes
+  tasks:
+
+  - name: File creation
+    file:
+    path: /home/ubuntu/testfile
+    state: touch
