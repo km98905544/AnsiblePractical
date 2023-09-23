@@ -20,4 +20,4 @@
     apt:
      name: tree
      state: present 
-    when: myvar1.strerr != ""
+    when: myvar1.stderr != ""
