@@ -9,11 +9,12 @@
      state: present
     
     # This is the new commit we have added
-    
+
   - name: Install tree 
     apt:
      name: tree
-     state: present
+     stateee: present
+    ignore_errors: yes
 
   - name: Install wget
     apt:
