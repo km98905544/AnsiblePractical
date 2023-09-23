@@ -14,7 +14,7 @@
     apt:
      name: git
      state: present    
-    when: myvar1.strerr == ""  
+    when: myvar1.stderr == ""  
 
   - name: Install the tree command
     apt:
