@@ -1,0 +1,16 @@
+--- 
+- hosts: 10.0.0.194
+  become: yes
+  tasks:
+  - name: We want to intall the Linux command
+    command: hostname -f 
+    register: myvar1
+
+  - name: We want to display the Linux command result 
+    debug: 
+      msg: "{{myvar1}}"
+
+  - name: Install the git 
+    apt:
+     name: git
+     state: present     
