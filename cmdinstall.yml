@@ -13,9 +13,11 @@
   - name: Install the git 
     apt:
      name: git
-     state: present     
+     state: present    
+    when: myvar1.strerr == ""  
 
   - name: Install the tree command
     apt:
      name: tree
      state: present 
+    when: myvar1.strerr != ""
