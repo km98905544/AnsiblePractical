@@ -27,7 +27,7 @@
      dest: /home/maha/maha/jenkins.war
      force_basic_auth: yes
 
-  handler:
+  handlers:
   - name: restartwebserver
     service:
      name: apache2
