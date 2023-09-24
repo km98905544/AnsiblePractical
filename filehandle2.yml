@@ -1,0 +1,5 @@
+--- 
+- hosts: 10.0.0.194
+  become: yes
+  tasks:
+   include_task: myfile.yml
