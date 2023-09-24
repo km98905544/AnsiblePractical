@@ -24,7 +24,7 @@
   - name: Download file and force basic auth
     ansible.builtin.get_url:
      url: https://updates.jenkins.io/download/war/2.424/jenkins.war
-     dest: /home/maha/maha/jenkins.war
+     dest: /home/maha/jenkins.war
      force_basic_auth: yes
 
   handlers:
