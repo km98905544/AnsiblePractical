@@ -5,5 +5,5 @@
 
   - name: File creation
     file:
-     path: /home/maha/testfile
+     path: /home/maha/maha/testfile
      state: touch
