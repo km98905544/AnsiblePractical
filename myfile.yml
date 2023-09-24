@@ -1,5 +1,5 @@
 --- 
 - name: Create the file 
   file: 
-    path: myfile.yml
+    path: /home/myfile.yml
     state: touch
