@@ -12,8 +12,8 @@
 
   - name: copy index.html file into the node side 
     copy:
-    src: index.html
-    dest: /var/www/html/index.html 
+     src: index.html
+     dest: /var/www/html/index.html 
 
   - name: copy index.j2 file into node side 
     template:
