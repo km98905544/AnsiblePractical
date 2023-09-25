@@ -2,8 +2,14 @@
 - hosts: 10.0.6.228
   become: yes
   tasks:
+  - include_tasks: myfile.yml
+  
+  - name: install webserver
+    apt:
+     name: apache2
+     state: present 
 
-  - name: File creation
-    file:
-     path: /home/ubuntu/testfile
-     state: touch
+  - name: Copy file to the node server creation
+    copy:
+     src: index.html
+     dest: /var/www/html.index.html
