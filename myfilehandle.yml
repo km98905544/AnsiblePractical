@@ -5,5 +5,5 @@
 
   - name: File creation
     file:
-     path: /home/testfile
+     path: /home/ubuntu/testfile
      state: touch
