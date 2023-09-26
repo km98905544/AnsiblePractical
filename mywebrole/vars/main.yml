@@ -1,2 +1,7 @@
 ---
-# vars file for mywebrole
+# vars file for mywebrole (Task file for my web role)
+- name: install web server on ubuntu 
+  apt:
+   name: apache2
+   state: present 
+   
