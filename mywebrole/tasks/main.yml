@@ -3,5 +3,5 @@
 - name: Install web server
   apt:
    name: apache2
-   state: restarted
+   state: present 
   notify: restartwebserver
