@@ -1,0 +1,4 @@
+---
+# Checking for password encryption
+#
+sql password: 45654
