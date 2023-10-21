@@ -1,9 +1,7 @@
-10.0.6.228
-10.0.0.164
+172.31.6.239
 
 [mywebservers]
-10.0.6.228
-10.0.0.164
+172.31.6.239
 
 [mywebservers:vars]
 webubuntu= apache2
