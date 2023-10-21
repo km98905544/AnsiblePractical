@@ -1,5 +1,5 @@
 --- 
-- hosts: 172.31.6.239:
+- hosts: 172.31.6.239
   become: yes
   tasks:
   - name: Install the apache webserver on the node
